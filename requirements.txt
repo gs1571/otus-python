@@ -1,0 +1,4 @@
+pytest
+Faker
+flake8
+requests

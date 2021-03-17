@@ -21,6 +21,16 @@ EVEN = "even"
 PRIME = "prime"
 
 
+# https://betterprogramming.pub/how-to-check-if-a-number-is-prime-in-python-9855e87cd9f8
+def is_prime(n):
+    if n <= 1 or n % 1 > 0:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+
 def filter_numbers(numbers, key):
     """
     функция, которая на вход принимает список из целых чисел,
@@ -33,18 +43,9 @@ def filter_numbers(numbers, key):
     <<< [2, 4]
     """
 
-    # https://betterprogramming.pub/how-to-check-if-a-number-is-prime-in-python-9855e87cd9f8
-    def is_prime(n):
-        if n <= 1 or n % 1 > 0:
-            return False
-        for i in range(2, n):
-            if n % i == 0:
-                return False
-        return True
-
-    if key == "odd":
+    if key == ODD:
         return [i for i in numbers if i % 2 != 0]
-    elif key == "even":
+    elif key == EVEN:
         return [i for i in numbers if i % 2 == 0]
-    elif key == "prime":
-        return [i for i in numbers if is_prime(i)]
+    elif key == PRIME:
+        return list(filter(is_prime, numbers))

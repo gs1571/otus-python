@@ -13,3 +13,4 @@
     * [Часть 1: Регистрация функции](https://python-scripts.com/decorators-one)
     * [Часть 2: Изменение поведения функции](https://python-scripts.com/decorators-function-behavior)
     * [Часть 3: Декораторы с аргументами](https://python-scripts.com/decorators-with-arguments)
+* [Декораторы в Python: понять и полюбить](https://tproger.ru/translations/demystifying-decorators-in-python/)

@@ -4,6 +4,7 @@
 
 ## Home works
 * [Homework 1](homework_01) - Functions and data structure
+* [Homework 2](homework_02) - Classes
 
 ## Useful links
 

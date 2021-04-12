@@ -1,5 +1,5 @@
 from abc import ABC
-import exceptions
+from homework_02 import exceptions
 
 
 class Vehicle(ABC):

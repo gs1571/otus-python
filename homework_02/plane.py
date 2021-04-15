@@ -6,13 +6,13 @@ from homework_02 import exceptions
 
 
 class Plane(Vehicle):
-    cargo = 0.0
 
     def __init__(self, weight=None, fuel=None, fuel_consumption=None, max_cargo=None):
         self.weight = weight or 1.0
         self.fuel = fuel or 0.0
         self.fuel_consumption = fuel_consumption or 1.0
         self.max_cargo = max_cargo or 0.0
+        self.cargo = 0.0
         super().__init__(self.weight, self.fuel, self.fuel_consumption)
 
     def load_cargo(self, cargo):
